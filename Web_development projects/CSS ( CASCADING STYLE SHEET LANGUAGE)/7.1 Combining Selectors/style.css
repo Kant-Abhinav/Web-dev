@@ -1,0 +1,30 @@
+/* Write your code here: */
+h1,h2{
+    color: blueviolet;
+
+
+}
+/* We grouped the element selectors using comma */
+.box>p{
+    color: firebrick;
+}
+/* Here box is the parent selector and the p is the child selector
+as it is just a common selector inside the parent one */
+.box li{
+    color: blue;
+}
+/* Here box is the ascendant and li is the descendant */
+li.done{
+    color: green;
+
+}
+/* Here we chained two selectors where we first have to write elements selector and then class selector 
+and then id as like the priority order just remember like that */
+ul p.done{
+    font-size: 0.5rem;
+}
+/* We could have also used the parent chain relationship between ul element selector and done class selector here */
+/* Here we first took the ancestor ul and then the chained the
+element and the class selectors of the descendant because there were 
+more paragraph elements with done classes above */
+

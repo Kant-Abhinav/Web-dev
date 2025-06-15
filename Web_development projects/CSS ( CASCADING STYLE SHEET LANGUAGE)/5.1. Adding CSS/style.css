@@ -1,0 +1,5 @@
+html{
+    background:green
+}
+/* same as what we write in the head section of the internal styling */
+/*The above written "html" is known as "Element Selector" which comes under the CSS selector, whatever is written inside a CSS selector affects the CSS selector only.

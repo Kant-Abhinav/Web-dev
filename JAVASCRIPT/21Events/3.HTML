@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h1> Chai aur Code</h1>
+<button id = "start"> Start</button>
+<button id = "stop"> Stop</button>
+<script>
+
+
+const value = function(str){
+    console.log(str, Date.now());
+    
+}
+let interValid;
+document.querySelector("#start").addEventListener("click", function(){
+     interValid = setInterval(value, 1000, "hi");
+})
+document.querySelector("#stop").addEventListener("click", function(){
+clearInterval(interValid);
+//What we did here is that we assigned a variable in the Global Scope
+//And We used that value to allign it with some value in local scope
+//It is later used to give reference to the clearInterval() function out here
+})
+
+
+
+</script>
+
+    
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Cascade</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div id="outer-box" class="box">
+    <div class="box">
+      <p>Yellow Text</p>
+      <div class="box inner-box">
+        <p class="white-text" style="color: white;">White Text</p>
+      </div>
+    </div>
+    <div class="box">
+      <p>Yellow Text</p>
+      <div class="box inner-box">
+        <p class="white-text" style="color: white;">White Text</p>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
+<!-- 
+1.)The lower is the element, id or the class.The more is it's priority.
+2.)Order of specificity Element selector < class-selector < attribute < id selector
+3.)Inline >Internal> External stlye 
+4.) We can use an important keyword to make something most important like
+    color:red;
+    color:green !important;-->

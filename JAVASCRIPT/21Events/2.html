@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h1> Chai aur Code</h1>
+<button id = "stop"> Stop</button>
+<script> 
+
+//setTimeOut
+
+    const say = function(){
+        console.log("Abhinav");
+    }
+const target = document.querySelector("h1");
+    const changeText = function(){
+      target.innerHTML = "lORD";
+    }
+    const changeMe = setTimeout(changeText, 2000);//It will be exectured no matter if it is contained in a variable or not
+    //clearTimeOut
+
+    const stop = document.querySelector("#stop").addEventListener("click",function(){
+        clearTimeout(changeMe);
+        console.log("STOPPED");
+        
+    })
+
+
+    
+
+
+    
+    
+</script>
+    
+</body>
+</html>
