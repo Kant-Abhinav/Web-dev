@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>CSS Positioning Exercise</title>
+   <!-- Absolute positioning in a div positions the div relative to the ancestor div's position and if
+    there is no ancestors div then it just positions it relative to the left and top of the html page
+     -->
+  <style>
+    /* Write your code here */
+    .blue-box{
+      background-color: blue;
+      height:300px;
+      width:500px;
+      position: relative;
+      left: 200px;
+      top: 200px;
+    }
+    .red-circle{
+      background-color: red;
+      height: 200px;
+      width:200px;
+      border-radius: 50%;
+      position: absolute;
+      left: 250px;
+      top: 150px;
+
+    
+    }
+    
+    
+  </style>
+ 
+</head>
+
+<body>
+  <div class="blue-box">
+    <div class="red-circle">
+    </div>
+  </div>
+
+</body>
+
+</html>

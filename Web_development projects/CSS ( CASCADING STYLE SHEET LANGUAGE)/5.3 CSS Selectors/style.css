@@ -1,0 +1,30 @@
+ol {
+  margin-left: -40px;
+  margin-top: -20px;
+  list-style-position: inside;
+}
+p{
+  color: red
+}
+.note{
+  font-size: 20px
+
+}
+/* . is used before the name of the class selectors */
+#id-selector-demo{
+   color:green;
+}
+/* # is used before the name of id selectors */
+li[value="4"]{
+  color: blue;
+}
+*{
+  text-align:center
+}
+/* A "*" makes everything select and is also known as universal selector*/
+/*for list elements we use [] and define the attribute here which we want to change*/
+
+
+
+/* Write your CSS below, don't change the rules above. */
+
